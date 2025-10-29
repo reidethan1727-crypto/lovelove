@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Floating hearts -->
+  <div class="hearts">
+    <span>🤍</span><span>🤍</span><span>🤍</span><span>🤍</span><span>🤍</span>
+    <span>🤍</span><span>🤍</span><span>🤍</span><span>🤍</span><span>🤍</span>
+  </div>
+
+  <!-- Secret code container -->
+  <div class="container" id="codeContainer">
+    <h1>Enter the Secret Code</h1>
+    <input type="text" id="secretCode" placeholder="Enter code here..." />
+    <p id="errorMsg" class="hidden error">❌ Wrong code! Try again.</p>
+    <button id="enterButton">Enter</button>
+  </div>
+
+  <!-- Welcome message container -->
+  <div class="message-container hidden" id="messageContainer">
+    <p id="welcomeText">Welcome my love, enjoy your stay :D</p>
+    <button id="nextButton">Next</button>
+  </div>
+
+  <!-- Question container -->
+  <div class="question-container hidden" id="questionContainer">
+    <p id="questionText">I have something special for you, do you want to see it?</p>
+    <div class="buttons">
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+    </div>
+  </div>
+
+  <!-- Photo showcase container -->
+  <div class="photo-showcase hidden" id="photoShowcase"></div>
+
+<!-- Folded letter reveal -->
+<div class="letter-popup hidden" id="letterPopup">
+  <img src="images/letter.jpg" alt="Folded Letter" class="folded-image" />
+  <p class="click-invite" id="clickInvite">Click me</p>
+</div>
+
+<!-- Unfolded letter -->
+<div class="unfolded-letter hidden" id="unfoldedLetter">
+  <div class="letter-content">
+    <p id="letterMessage">[Your message will go here]</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
